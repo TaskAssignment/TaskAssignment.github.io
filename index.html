@@ -58,6 +58,16 @@
 <p> This ensures that bugs from different sources with the same id will have different ids on our database.
     It's also an easy way to check the source of a bug. And, because an id is already unique inside a system,
     like a GitHub id, we can safely refer to them when any other information on the bug is needed.
+</p>
+
+<h3> Developers </h3>
+
+<p> Right now we have developer profiles from StackOverflow, GitHub and Bugzilla.
+    Users are 'merged' under a common <code> Developer </code> profile using their emails.
+</p>
+<p> To add new profiles, a schema must be created, and <code> Developer </code>
+    must reference it.
+</p>
 <h3>
 <a id="inline-documentation" class="anchor" href="#inline-documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API documentation</h3>
 
