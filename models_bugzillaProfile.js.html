@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/bugzillaProfile.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,43 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/bugzillaProfile.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-    <h3> </h3>
+/** This represents a user on Bugzilla. If this user has an e-mail,
+* it will be possible to gather information from multiple profiles.
+*
+* @class BugzillaProfile
+* @see Developer
+* @requires mongoose
+**/
+var BugzillaProfileSchema = new Schema({
+    _id: { //Bugzilla id
+        type: Number,
+        required: true,
+        unique: true,
+    },
+    email: String,
+    realName: String,
+}, {
+    timestamps: true,
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('BugzillaProfile', BugzillaProfileSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

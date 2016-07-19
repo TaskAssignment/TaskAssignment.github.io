@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/event.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,53 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/event.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-    <h3> </h3>
+/** Events are the story of an Issue on GitHub. They show when that issue had
+* labels added or removed, when commits referenced that issue or when a user was
+* assigned or deassigned.
+*
+* @class Event
+* @requires mongoose
+**/
+var EventSchema = new Schema({
+    _id: Number,
+    projectId: {
+        type: Number,
+        ref: 'Project',
+    },
+    issueId: {
+        type: Number,
+        ref: 'Issue',
+    },
+    issueNumber: Number,
+    actor: String,
+    commitId: String,
+    typeOfEvent: String,
+    assigneeId: String,
+    createdAt: Date,
+    isPrEvent: {
+        type: Boolean,
+        default: false, //IssueEvent or Pull Request Event
+    },
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('Event', EventSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

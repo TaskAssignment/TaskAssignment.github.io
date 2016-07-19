@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/comment.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,50 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/comment.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 
-    <h3> </h3>
+/** This is a GitHub comment. It can reference to an Issue or to a commit. Body
+* is required.
+*
+* @class Comment
+* @see GitHubIssue
+* @see Commit
+* @requires mongoose
+**/
+var CommentSchema = new Schema({
+    _id: Number,
+    body: String,
+    user: String,
+    createdAt: Date,
+    issueNumber: Number,
+    commitSha: {
+        type: String,
+        ref: 'Commit'
+    },
+    projectId: {
+        type: Number,
+        ref: 'Issue'
+    },
+    type: String //Issue comment or commit comment
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('Comment', CommentSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

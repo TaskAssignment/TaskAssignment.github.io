@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/coOccurrence.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,48 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/coOccurrence.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-    <h3> </h3>
+/** CoOccurrence is the count of how many times a StackOverflow tag appears with
+* another tag. All fields are required.
+* @class CoOccurrence
+* @requires mongoose
+**/
+var CoOccurrenceSchema = new Schema({
+    source: {
+        type: String,
+        ref: 'Tag',
+        required: true
+    },
+    target: {
+        type: String,
+        ref: 'Tag',
+        required: true
+    },
+    occurrences: {
+        type: Number,
+        required: true
+    }
+});
 
+CoOccurrenceSchema.index({source: 1, target: 1});
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('CoOccurrence', CoOccurrenceSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

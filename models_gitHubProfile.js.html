@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/gitHubProfile.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,49 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/gitHubProfile.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-    <h3> </h3>
+/** This represents a user on GitHub. It shows the repositories this user is a
+* contributor of.  If this user has an e-mail, it will be possible to gather
+* information from multiple profiles.
+*
+* @class GitHubProfile
+* @see Project
+* @see Developer
+* @requires mongoose
+**/
+var GitHubProfileSchema = new Schema({
+    _id: { //GitHub login
+        type: String,
+        required: true,
+        unique: true,
+    },
+    email: String,
+    repositories: [{
+        type: Number,
+        ref: 'Project',
+        unique: true,
+    }],
+}, {
+    timestamps: true,
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('GitHubProfile', GitHubProfileSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

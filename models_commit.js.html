@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/commit.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,42 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/commit.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-    <h3> </h3>
+/** This represents a commit from GitHub. It shows the user and project that it
+belongs to. Message is required.
+*
+* @class Commit
+* @requires mongoose
+**/
+var CommitSchema = new Schema({
+    _id: String,
+    message: String,
+    user: String,
+    projectId: {
+        type: Number,
+        ref: 'Project',
+    },
+    createdAt: Date,
+    url: String
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('Commit', CommitSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

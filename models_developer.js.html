@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/developer.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,57 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/developer.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-    <h3> </h3>
+/** This is the generic Developer profile. It gathers all the other profiles based
+* on the user's email. One developer can have several profiles on different platforms,
+* like GitHub and StackOverflow. Any other profiles must be added to this and referenced
+* on their models.
+*
+* @class Developer
+* @requires mongoose
+**/
+var DeveloperSchema = new Schema({
+    email: {
+        type: String,
+        unique: true,
+        required: true,
+    },
+    profiles: {
+        gh: [{
+            type: String,
+            ref: 'GitHubProfile',
+        }],
+        so: [{
+            type: Number,
+            ref: 'StackOverflowProfile',
+        }],
+        bz: [{
+            type: Number,
+            ref: 'BugzillaProfile',
+        }],
+        //To add a new profile: create the schema and then reference it here.
+    },
+}, {
+    timestamps: true,
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('Developer', DeveloperSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 

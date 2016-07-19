@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/project.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,49 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/project.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 
-    <h3> </h3>
+/** This represents a GitHub repository.
+*
+* @class Project
+* @requires mongoose
+**/
+var ProjectSchema = new Schema({
+    _id: {
+        type: Number,
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    description: String,
+    language: String,
+    languages: [{
+        _id: String,
+        amount: String,
+    }],
+    eventsEtag: String,
+}, {
+    timestamps: true
+});
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+mongoose.model('Project', ProjectSchema);
+</code></pre>
+        </article>
+    </section>
 
 
 
