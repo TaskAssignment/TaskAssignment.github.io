@@ -25,56 +25,56 @@
 
     <div class="container">
       <section id="main_content">
-        <h2>
-<a id="welcome-to-taskassignment" class="anchor" href="#welcome-to-taskassignment" aria-hidden="true">
-    <span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to TaskAssignment</h2>
+        <h2 id="welcome-to-taskassignment"> Welcome to TaskAssignment </h2>
 
-<p>This is the needed documentation to continue the development of this software.
-    It's intended to help developers with previous information and assumptions made throughout the development course.</p>
+        <p>
+            This is the needed documentation to continue the development of this software.
+            It's intended to help developers with previous information and assumptions made throughout the development course.
+        </p>
 
-<p> One important architectural decision is the profile division for Developers and Bugs.
-    They are similar and yet different. These abstractions are needed to analyze data from different sources, like GitHub, Bugzilla, StackOverflow.
-    More details on each one bellow.
-</p>
+        <p>
+            One important architectural decision is the profile division for Developers and Bugs.
+            They are similar and yet different.
+            These abstractions are needed to analyze data from different sources, like GitHub, Bugzilla, StackOverflow.
+            More details on each one bellow.
+        </p>
 
-<h3>Bugs</h3>
+        <h3>Bugs</h3>
 
-<p> Bugs can come from GitHub or Bugzilla, as of now.
-    Those are considered subprofiles and reference a <code> Bug </code>
-    that will contain the basic information for a bug analized in this system.
-    Check <a href="/api/Bug.html">Bug documentation</a> to know what is this basic information.
-</p>
+        <p> Bugs can come from GitHub or Bugzilla, as of now.
+            Those are considered subprofiles and reference a <code> Bug </code>
+            that will contain the basic information for a bug analized in this system.
+            Check the <a href="/api/Bug.html">Bug documentation</a> to know what is this basic information.
+        </p>
 
-<p> For now, a <code> Bug </code> must be created just before the creation of a
-    specific profile. The specific profile must, then, reference the general <code> Bug </code>.
-    Because this is not an issue tracker, and we fetch bugs from other places, <code> Bug </code> _id must be the
-    a 2 letter acronym representing the origin plus the specific id. Example:
-    A Bug from GitHub has an <code> id </code> equals to 123. If I fetch this bug to the system database,
-    I'll have a <code> GitHubIssue </code> with _id 123 that will reference a <code> Bug </code> with _id 'GH123'.
-    A Bug from Bugzilla with the same id, would reference a <code> Bug </code> with
-    _id 'BZ123'.
-</p>
+        <p> For now, a <code> Bug </code> must be created just before the creation of a
+            specific profile. The specific profile must, then, reference the general <code> Bug </code>.
+            Because this is not an issue tracker, and we fetch bugs from other places, <code> Bug </code> _id must be the
+            a 2 letter acronym representing the origin plus the specific id. Example:
+            A Bug from GitHub has an <code> id </code> equals to 123. If I fetch this bug to the system database,
+            I'll have a <code> GitHubIssue </code> with _id 123 that will reference a <code> Bug </code> with _id 'GH123'.
+            A Bug from Bugzilla with the same id, would reference a <code> Bug </code> with
+            _id 'BZ123'.
+        </p>
 
-<p> This ensures that bugs from different sources with the same id will have different ids on our database.
-    It's also an easy way to check the source of a bug. And, because an id is already unique inside a system,
-    like a GitHub id, we can safely refer to them when any other information on the bug is needed.
-</p>
+        <p> This ensures that bugs from different sources with the same id will have different ids on our database.
+            It's also an easy way to check the source of a bug. And, because an id is already unique inside a system,
+            like a GitHub id, we can safely refer to them when any other information on the bug is needed.
+        </p>
 
-<h3> Developers </h3>
+        <h3> Developers </h3>
 
-<p> Right now we have developer profiles from StackOverflow, GitHub and Bugzilla.
-    Users are 'merged' under a common <code> Developer </code> profile using their emails.
-</p>
-<p> To add new profiles, a schema must be created, and <code> Developer </code>
-    must reference it.
-</p>
-<h3>
-<a id="inline-documentation" class="anchor" href="#inline-documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API documentation</h3>
+        <p> Right now we have developer profiles from StackOverflow, GitHub and Bugzilla.
+            Users are 'merged' under a common <code> Developer </code> profile using their emails.
+        </p>
+        <p> To add new profiles, a schema must be created, and <code> Developer </code>
+            must reference it.
+            Check the <a href="/api/Developer.html">Developer documentation</a> for more information.
+        </p>
 
-<p>You can check the existing methods and what they do following <a href="/api">this link</a></p>
+        <h2> API documentation </h2>
+        <p>Check the API documentation <a href="/api">here</a></p>
       </section>
     </div>
-
-
   </body>
 </html>
