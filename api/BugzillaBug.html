@@ -48,7 +48,7 @@
 
 <div class="description">
     This is a bug from Bugzilla. It has more information than the basic bug and
-it references a Bug. Using mongoose, the bug can be accessed if populate was
+it references a Bug. Using mongoose, the bug can be accessed if populate is
 used
 </div>
 
@@ -146,6 +146,723 @@ used
     
 
     
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="~_id"><span class="type-signature">(inner) </span>_id<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    The id on the source. Since this is a Bugzilla bug, this number should be
+unique on their database.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~assignee"><span class="type-signature">(inner) </span>assignee<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    This is references the assignee on this database
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="BugzillaProfile.html">BugzillaProfile</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~bugId"><span class="type-signature">(inner) </span>bugId<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    This is the reference to the generic Bug on the database. (Like a Foreign
+Key on a relational database)
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="Bug.html">Bug</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~ccUsers"><span class="type-signature">(inner) </span>ccUsers<span class="type-signature"> :Array</span></h4>
+
+
+
+
+<div class="description">
+    List of users that may help on the resolution of this bug.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="BugzillaProfile.html">BugzillaProfile</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~classification"><span class="type-signature">(inner) </span>classification<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Classification of this bug
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~component"><span class="type-signature">(inner) </span>component<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Component that this bug is related to/occurs at
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>Firefox Accounts, New Tab Page</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="~platform"><span class="type-signature">(inner) </span>platform<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    The OS that the bug is happening on.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>x86_64 Windows, Linux</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="~product"><span class="type-signature">(inner) </span>product<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    The Product that produces this bug
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>Firefox for iOS, Firefox</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="~severity"><span class="type-signature">(inner) </span>severity<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Indicates the severity of this bug
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~version"><span class="type-signature">(inner) </span>version<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Product version that this bug is happening on.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>47 Branch</code></pre>
+
+
+
+        
+    
 
     
 
@@ -168,7 +885,7 @@ used
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Jul 21 2016 10:20:29 GMT-0600 (MDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Jul 21 2016 10:44:52 GMT-0600 (MDT)
 </footer>
 
 <script> prettyPrint(); </script>
