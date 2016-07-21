@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: GitHubProfile</title>
+    <title>GitHubProfile - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-    <h1 class="page-title">Class: GitHubProfile</h1>
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li></ul><h3>Modules</h3><ul><li><a href="module-admin.html">admin</a><ul class='methods'><li data-type='method'><a href="module-admin.html#~readDevs">readDevs</a></li><li data-type='method'><a href="module-admin.html#~readFile">readFile</a></li><li data-type='method'><a href="module-admin.html#~writeAnswersAndQuestions">writeAnswersAndQuestions</a></li><li data-type='method'><a href="module-admin.html#~writeBugs">writeBugs</a></li><li data-type='method'><a href="module-admin.html#~writeFile">writeFile</a></li></ul></li><li><a href="module-populator.html">populator</a><ul class='methods'><li data-type='method'><a href="module-populator.html#~gitHubPopulate">gitHubPopulate</a></li><li data-type='method'><a href="module-populator.html#~populateAnswers">populateAnswers</a></li><li data-type='method'><a href="module-populator.html#~populateComments">populateComments</a></li><li data-type='method'><a href="module-populator.html#~populateCommits">populateCommits</a></li><li data-type='method'><a href="module-populator.html#~populateContributors">populateContributors</a></li><li data-type='method'><a href="module-populator.html#~populateCoOccurrences">populateCoOccurrences</a></li><li data-type='method'><a href="module-populator.html#~populateEvents">populateEvents</a></li><li data-type='method'><a href="module-populator.html#~populateIssues">populateIssues</a></li><li data-type='method'><a href="module-populator.html#~populateLanguages">populateLanguages</a></li><li data-type='method'><a href="module-populator.html#~populateQuestions">populateQuestions</a></li><li data-type='method'><a href="module-populator.html#~populateStackOverflowUserData">populateStackOverflowUserData</a></li><li data-type='method'><a href="module-populator.html#~populateTags">populateTags</a></li><li data-type='method'><a href="module-populator.html#~populateUserTags">populateUserTags</a></li><li data-type='method'><a href="module-populator.html#~remakeRequest">remakeRequest</a></li><li data-type='method'><a href="module-populator.html#~soPopulate">soPopulate</a></li></ul></li><li><a href="module-projects.html">projects</a><ul class='methods'><li data-type='method'><a href="module-projects.html#~find">find</a></li><li data-type='method'><a href="module-projects.html#~findIssues">findIssues</a></li><li data-type='method'><a href="module-projects.html#~get">get</a></li><li data-type='method'><a href="module-projects.html#~save">save</a></li></ul></li><li><a href="module-routes.html">routes</a></li><li><a href="module-table.html">table</a><ul class='methods'><li data-type='method'><a href="module-table.html#~cosineSimilarity">cosineSimilarity</a></li><li data-type='method'><a href="module-table.html#~findMatches">findMatches</a></li><li data-type='method'><a href="module-table.html#~jaccardSimilarity">jaccardSimilarity</a></li><li data-type='method'><a href="module-table.html#~mergeTags">mergeTags</a></li><li data-type='method'><a href="module-table.html#~sort">sort</a></li><li data-type='method'><a href="module-table.html#~ssaZSimilarity">ssaZSimilarity</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#showLoadingScreen">showLoadingScreen</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">GitHubProfile</h1>
+    
 
     
 
@@ -28,7 +40,9 @@
 
 <header>
     
-        <h2>GitHubProfile</h2>
+        <h2>
+        GitHubProfile
+        </h2>
         
     
 </header>
@@ -163,17 +177,13 @@ information from multiple profiles.
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-admin.html">admin</a></li><li><a href="module-populator.html">populator</a></li><li><a href="module-projects.html">projects</a></li><li><a href="module-routes.html">routes</a></li><li><a href="module-table.html">table</a></li></ul><h3>Classes</h3><ul><li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li></ul><h3>Global</h3><ul><li><a href="global.html#showLoadingScreen">showLoadingScreen</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Jul 21 2016 11:47:30 GMT-0600 (MDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>
