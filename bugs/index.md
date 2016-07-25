@@ -12,10 +12,11 @@ For now, a [`Bug`](/api/Bug.html) must be created just before the creation of a
 specific profile. The specific profile must, then, reference the general [`Bug`](/api/Bug.html).
 
 Because this is not an issue tracker, and we fetch bugs from other places, **[`Bug`](/api/Bug.html) id must be the
-a 2 letter acronym representing the origin plus the specific id.** Example:
-A Bug from GitHub has an `id` equals to 123. If I fetch this bug to the system database,
-I'll have a [`GitHubIssue`](/api/GitHubIssue.html) with id 123 that will reference a [`Bug`](/api/Bug.html) with id 'GH123'.
-A Bug from Bugzilla with the same id, would reference a [`Bug`](/api/Bug.html) with
+a 2 letter acronym representing the origin plus the specific id.**
+
+Example:
+A Bug from GitHub has an id equals to 123. A [`GitHubIssue`](/api/GitHubIssue.html) with id 123 that references a [`Bug`](/api/Bug.html) with id 'GH123' will be created.
+A [`BugzillaBug`](/api/BugzillaBug.html) with the same id, would reference a [`Bug`](/api/Bug.html) with
 id 'BZ123'.
 
 This ensures that bugs from different sources with the same id will have different ids on our database.
