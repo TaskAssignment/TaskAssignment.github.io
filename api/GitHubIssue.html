@@ -1,41 +1,83 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>GitHubIssue - Documentation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Class: GitHubIssue</title>
 
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
 </head>
+
 <body>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-admin.html">admin</a></li><li><a href="module-populator.html">populator</a></li><li><a href="module-projects.html">projects</a></li><li><a href="module-routes.html">routes</a></li><li><a href="module-table.html">table</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#showLoadingScreen">showLoadingScreen</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-3">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
 
-<label for="nav-trigger" class="overlay"></label>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li></ul><h3>Modules</h3><ul><li><a href="module-admin.html">admin</a><ul class='methods'><li data-type='method'><a href="module-admin.html#~readDevs">readDevs</a></li><li data-type='method'><a href="module-admin.html#~readFile">readFile</a></li><li data-type='method'><a href="module-admin.html#~writeAnswersAndQuestions">writeAnswersAndQuestions</a></li><li data-type='method'><a href="module-admin.html#~writeBugs">writeBugs</a></li><li data-type='method'><a href="module-admin.html#~writeFile">writeFile</a></li></ul></li><li><a href="module-populator.html">populator</a><ul class='methods'><li data-type='method'><a href="module-populator.html#~gitHubPopulate">gitHubPopulate</a></li><li data-type='method'><a href="module-populator.html#~populateAnswers">populateAnswers</a></li><li data-type='method'><a href="module-populator.html#~populateComments">populateComments</a></li><li data-type='method'><a href="module-populator.html#~populateCommits">populateCommits</a></li><li data-type='method'><a href="module-populator.html#~populateContributors">populateContributors</a></li><li data-type='method'><a href="module-populator.html#~populateCoOccurrences">populateCoOccurrences</a></li><li data-type='method'><a href="module-populator.html#~populateEvents">populateEvents</a></li><li data-type='method'><a href="module-populator.html#~populateIssues">populateIssues</a></li><li data-type='method'><a href="module-populator.html#~populateLanguages">populateLanguages</a></li><li data-type='method'><a href="module-populator.html#~populateQuestions">populateQuestions</a></li><li data-type='method'><a href="module-populator.html#~populateStackOverflowUserData">populateStackOverflowUserData</a></li><li data-type='method'><a href="module-populator.html#~populateTags">populateTags</a></li><li data-type='method'><a href="module-populator.html#~populateUserTags">populateUserTags</a></li><li data-type='method'><a href="module-populator.html#~remakeRequest">remakeRequest</a></li><li data-type='method'><a href="module-populator.html#~soPopulate">soPopulate</a></li></ul></li><li><a href="module-projects.html">projects</a><ul class='methods'><li data-type='method'><a href="module-projects.html#~find">find</a></li><li data-type='method'><a href="module-projects.html#~findIssues">findIssues</a></li><li data-type='method'><a href="module-projects.html#~get">get</a></li><li data-type='method'><a href="module-projects.html#~save">save</a></li></ul></li><li><a href="module-routes.html">routes</a></li><li><a href="module-table.html">table</a><ul class='methods'><li data-type='method'><a href="module-table.html#~cosineSimilarity">cosineSimilarity</a></li><li data-type='method'><a href="module-table.html#~findMatches">findMatches</a></li><li data-type='method'><a href="module-table.html#~jaccardSimilarity">jaccardSimilarity</a></li><li data-type='method'><a href="module-table.html#~mergeTags">mergeTags</a></li><li data-type='method'><a href="module-table.html#~sort">sort</a></li><li data-type='method'><a href="module-table.html#~ssaZSimilarity">ssaZSimilarity</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#showLoadingScreen">showLoadingScreen</a></li></ul>
-</nav>
-
-<div id="main">
-    
-    <h1 class="page-title">GitHubIssue</h1>
-    
-
-    
+</div>
+</div>
 
 
+<div class="container" id="toc-content">
+<div class="row">
 
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
 
+	<h1 class="page-title">Class: GitHubIssue</h1>
 <section>
 
 <header>
@@ -47,37 +89,42 @@
     
 </header>
 
+
 <article>
     <div class="container-overview">
     
         
+<hr>
+<dt>
+    <h4 class="name" id="GitHubIssue"><span class="type-signature"></span>new GitHubIssue()</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="GitHubIssue"><span class="type-signature"></span>new GitHubIssue<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    This represents a GitHub Issue. It references to a basic bug and has the additional
+    <div class="description">
+        This represents a GitHub Issue. It references to a basic bug and has the additional
 information pertinent to GitHub (like if it's a Pull Request or the Assignees)
-</div>
+    </div>
+    
 
+    
 
+    
 
+    
+    
 
-
-
-
-
-
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -87,57 +134,59 @@ information pertinent to GitHub (like if it's a Pull Request or the Assignees)
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="Bug.html">Bug</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="Bug.html">Bug</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
+    <h5>Requires:</h5>
+    <ul>
+        <li>module:mongoose</li>
+    </ul>
+    
 
-<h5>Requires:</h5>
-<ul>
-    <li>module:mongoose</li>
-</ul>
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
+    
+</dd>
 
     
     </div>
@@ -154,41 +203,50 @@ information pertinent to GitHub (like if it's a Pull Request or the Assignees)
 
     
 
-     
+    
 
     
 
     
         <h3 class="subsection-title">Members</h3>
 
-        
+        <dl>
             
-<h4 class="name" id="~_id"><span class="type-signature">(inner) </span>_id<span class="type-signature"> :Number</span></h4>
+<hr>
+<dt class="name" id="~_id">
+    <h4><span class="type-signature">&lt;inner> </span>_id<span class="type-signature"> :Number</span></h4>
 
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        GitHub id for the issue.
+    </div>
+    
 
-
-
-<div class="description">
-    GitHub id for the issue.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
 <span class="param-type">Number</span>
 
 
-        </li>
-    </ul>
 
+            </li>
+        </ul>
+    
 
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -198,401 +256,448 @@ information pertinent to GitHub (like if it's a Pull Request or the Assignees)
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
 
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
-
-
-
+    
+</dd>
 
         
             
-<h4 class="name" id="~assignees"><span class="type-signature">(inner) </span>assignees<span class="type-signature"> :Array.&lt;String></span></h4>
+<hr>
+<dt class="name" id="~assignees">
+    <h4><span class="type-signature">&lt;inner> </span>assignees<span class="type-signature"> :Array.&lt;String></span></h4>
 
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The assignees of this issue (zero or more)
+    </div>
+    
 
-
-
-<div class="description">
-    The assignees of this issue (zero or more)
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
 <span class="param-type">Array.&lt;String></span>
 
 
-        </li>
-    </ul>
 
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="GitHubProfile.html">GitHubProfile</a></li>
+            </li>
         </ul>
-    </dd>
     
 
     
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="GitHubProfile.html">GitHubProfile</a></li>
+			</ul>
+	</dd>
+	
+
+	
 </dl>
 
 
-
-
-
+    
+</dd>
 
         
             
-<h4 class="name" id="~bug"><span class="type-signature">(inner) </span>bug<span class="type-signature"> :String</span></h4>
+<hr>
+<dt class="name" id="~bug">
+    <h4><span class="type-signature">&lt;inner> </span>bug<span class="type-signature"> :String</span></h4>
 
-
-
-
-<div class="description">
-    This is the reference to the generic Bug on the database. (Like a Foreign
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        This is the reference to the generic Bug on the database. (Like a Foreign
 Key on a relational database)
-</div>
+    </div>
+    
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
 <span class="param-type">String</span>
 
 
-        </li>
-    </ul>
 
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="Bug.html">Bug</a></li>
+            </li>
         </ul>
-    </dd>
     
 
     
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="Bug.html">Bug</a></li>
+			</ul>
+	</dd>
+	
+
+	
 </dl>
 
 
-
-
-
+    
+</dd>
 
         
             
-<h4 class="name" id="~isPR"><span class="type-signature">(inner) </span>isPR<span class="type-signature"> :Boolean</span></h4>
+<hr>
+<dt class="name" id="~isPR">
+    <h4><span class="type-signature">&lt;inner> </span>isPR<span class="type-signature"> :Boolean</span></h4>
 
-
-
-
-<div class="description">
-    Boolean representing if this issue is a Pull Request (PR) or not. Every PR
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Boolean representing if this issue is a Pull Request (PR) or not. Every PR
 is an issue on GitHub.
-</div>
+    </div>
+    
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
 <span class="param-type">Boolean</span>
 
 
-        </li>
-    </ul>
 
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy">
-            <li>false</li>
-        </ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="~number"><span class="type-signature">(inner) </span>number<span class="type-signature"> :Number</span></h4>
-
-
-
-
-<div class="description">
-    The issue number. This number is unique inside a project, but NOT in
-all GitHub.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="~project"><span class="type-signature">(inner) </span>project<span class="type-signature"> :Number</span></h4>
-
-
-
-
-<div class="description">
-    The project where this issue comes from.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="Project.html">Project</a></li>
+            </li>
         </ul>
-    </dd>
     
 
     
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>false</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
+
+	
+
+	
+
+	
 </dl>
 
 
-
-
-
+    
+</dd>
 
         
+            
+<hr>
+<dt class="name" id="~number">
+    <h4><span class="type-signature">&lt;inner> </span>number<span class="type-signature"> :Number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The issue number. This number is unique inside a project, but NOT in
+all GitHub.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="~project">
+    <h4><span class="type-signature">&lt;inner> </span>project<span class="type-signature"> :Number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The project where this issue comes from.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/models/gitHubIssue.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="Project.html">Project</a></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
     
 
     
@@ -607,15 +712,125 @@ all GitHub.
 
 
 
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
 </div>
 
-<br class="clear">
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> using the Minami theme.
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
 </footer>
 
-<script>prettyPrint();</script>
-<script src="scripts/linenumber.js"></script>
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
 </body>
 </html>

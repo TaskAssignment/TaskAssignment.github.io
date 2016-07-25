@@ -1,50 +1,89 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>populator - Documentation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Module: populator</title>
 
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
 </head>
+
 <body>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-admin.html">admin</a></li><li><a href="module-populator.html">populator</a></li><li><a href="module-projects.html">projects</a></li><li><a href="module-routes.html">routes</a></li><li><a href="module-table.html">table</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#showLoadingScreen">showLoadingScreen</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-3">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
 
-<label for="nav-trigger" class="overlay"></label>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li></ul><h3>Modules</h3><ul><li><a href="module-admin.html">admin</a><ul class='methods'><li data-type='method'><a href="module-admin.html#~readDevs">readDevs</a></li><li data-type='method'><a href="module-admin.html#~readFile">readFile</a></li><li data-type='method'><a href="module-admin.html#~writeAnswersAndQuestions">writeAnswersAndQuestions</a></li><li data-type='method'><a href="module-admin.html#~writeBugs">writeBugs</a></li><li data-type='method'><a href="module-admin.html#~writeFile">writeFile</a></li></ul></li><li><a href="module-populator.html">populator</a><ul class='methods'><li data-type='method'><a href="module-populator.html#~gitHubPopulate">gitHubPopulate</a></li><li data-type='method'><a href="module-populator.html#~populateAnswers">populateAnswers</a></li><li data-type='method'><a href="module-populator.html#~populateComments">populateComments</a></li><li data-type='method'><a href="module-populator.html#~populateCommits">populateCommits</a></li><li data-type='method'><a href="module-populator.html#~populateContributors">populateContributors</a></li><li data-type='method'><a href="module-populator.html#~populateCoOccurrences">populateCoOccurrences</a></li><li data-type='method'><a href="module-populator.html#~populateEvents">populateEvents</a></li><li data-type='method'><a href="module-populator.html#~populateIssues">populateIssues</a></li><li data-type='method'><a href="module-populator.html#~populateLanguages">populateLanguages</a></li><li data-type='method'><a href="module-populator.html#~populateQuestions">populateQuestions</a></li><li data-type='method'><a href="module-populator.html#~populateStackOverflowUserData">populateStackOverflowUserData</a></li><li data-type='method'><a href="module-populator.html#~populateTags">populateTags</a></li><li data-type='method'><a href="module-populator.html#~populateUserTags">populateUserTags</a></li><li data-type='method'><a href="module-populator.html#~remakeRequest">remakeRequest</a></li><li data-type='method'><a href="module-populator.html#~soPopulate">soPopulate</a></li></ul></li><li><a href="module-projects.html">projects</a><ul class='methods'><li data-type='method'><a href="module-projects.html#~find">find</a></li><li data-type='method'><a href="module-projects.html#~findIssues">findIssues</a></li><li data-type='method'><a href="module-projects.html#~get">get</a></li><li data-type='method'><a href="module-projects.html#~save">save</a></li></ul></li><li><a href="module-routes.html">routes</a></li><li><a href="module-table.html">table</a><ul class='methods'><li data-type='method'><a href="module-table.html#~cosineSimilarity">cosineSimilarity</a></li><li data-type='method'><a href="module-table.html#~findMatches">findMatches</a></li><li data-type='method'><a href="module-table.html#~jaccardSimilarity">jaccardSimilarity</a></li><li data-type='method'><a href="module-table.html#~mergeTags">mergeTags</a></li><li data-type='method'><a href="module-table.html#~sort">sort</a></li><li data-type='method'><a href="module-table.html#~ssaZSimilarity">ssaZSimilarity</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#showLoadingScreen">showLoadingScreen</a></li></ul>
-</nav>
-
-<div id="main">
-    
-    <h1 class="page-title">populator</h1>
-    
-
-    
+</div>
+</div>
 
 
+<div class="container" id="toc-content">
+<div class="row">
 
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
 
+	<h1 class="page-title">Module: populator</h1>
 <section>
 
 <header>
     
-        
-            
-        
-    
 </header>
+
 
 <article>
     <div class="container-overview">
@@ -54,23 +93,14 @@
         
 
         
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -80,44 +110,31 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         
@@ -138,7 +155,7 @@
 
     
 
-     
+    
 
     
 
@@ -147,34 +164,33 @@
     
         <h3 class="subsection-title">Methods</h3>
 
-        
+        <dl>
             
+<hr>
+<dt>
+    <h4 class="name" id="~gitHubPopulate"><span class="type-signature">&lt;inner> </span>gitHubPopulate(option, specificUrl, callback, etag, finalUrl)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~gitHubPopulate"><span class="type-signature">(inner) </span>gitHubPopulate<span class="signature">(option, specificUrl, callback, etag, finalUrl)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Basic flow for GitHub requests. This handles the pagination and eventual errors,
+    <div class="description">
+        Basic flow for GitHub requests. This handles the pagination and eventual errors,
 so every GitHub request should be made though this function.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -207,6 +223,7 @@ so every GitHub request should be made though this function.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -235,6 +252,7 @@ check the request status later. It can be Issue, Comment, Developer, etc.</td>
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -260,6 +278,7 @@ check the request status later. It can be Issue, Comment, Developer, etc.</td>
             
                 
 <span class="param-type">function</span>
+
 
 
             
@@ -290,6 +309,7 @@ check the request status later. It can be Issue, Comment, Developer, etc.</td>
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -317,6 +337,7 @@ check the request status later. It can be Issue, Comment, Developer, etc.</td>
 <span class="param-type">boolean</span>
 
 
+
             
             </td>
 
@@ -340,12 +361,17 @@ check the request status later. It can be Issue, Comment, Developer, etc.</td>
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -355,81 +381,82 @@ check the request status later. It can be Issue, Comment, Developer, etc.</td>
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://developer.github.com/v3/">GitHub API overview</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://developer.github.com/v3/">GitHub API overview</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateAnswers"><span class="type-signature">&lt;inner> </span>populateAnswers(ids, projectId, filter, obj, site)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateAnswers"><span class="type-signature">(inner) </span>populateAnswers<span class="signature">(ids, projectId, filter, obj, site)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Populate answers from StackOverflow using the soPopulate function.
+    <div class="description">
+        Populate answers from StackOverflow using the soPopulate function.
 Answers can be populated based on users or not.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -462,6 +489,7 @@ Answers can be populated based on users or not.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -487,6 +515,7 @@ Answers can be populated based on users or not.
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -517,6 +546,7 @@ Answers can be populated based on users or not.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -544,6 +574,7 @@ Answers can be populated based on users or not.
             
                 
 <span class="param-type">string</span>
+
 
 
             
@@ -577,6 +608,7 @@ Answers can be populated based on users or not.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -597,12 +629,17 @@ Answers can be populated based on users or not.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -612,88 +649,89 @@ Answers can be populated based on users or not.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://api.stackexchange.com/docs/answers-by-ids%20"> Answers by ids</a>.</li>
+			
+			<li><a href="https://api.stackexchange.com/docs/answers-on-users%20"> Answers on users</a></li>
+			
+			<li>populateUserTags</li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://api.stackexchange.com/docs/answers-by-ids%20"> Answers by ids</a>.</li>
-        
-            <li><a href="https://api.stackexchange.com/docs/answers-on-users%20"> Answers on users</a></li>
-        
-            <li>populateUserTags</li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateComments"><span class="type-signature">&lt;inner> </span>populateComments(projectId, type)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateComments"><span class="type-signature">(inner) </span>populateComments<span class="signature">(projectId, type)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Fetch comments from a repository. They may be on issue or commits, depending
+    <div class="description">
+        Fetch comments from a repository. They may be on issue or commits, depending
 on what is specified by who calls this function. Commit Comments cannot be sorted,
 or filtered. So, when calling this for commits comments, it will always get ALL
 the comments on commits of this repository! Issue Comments can be filtered by
 date, so only new ones are fetched when calling this for issue comments.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -722,6 +760,7 @@ date, so only new ones are fetched when calling this for issue comments.
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -747,6 +786,7 @@ date, so only new ones are fetched when calling this for issue comments.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -761,12 +801,17 @@ date, so only new ones are fetched when calling this for issue comments.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -776,83 +821,84 @@ date, so only new ones are fetched when calling this for issue comments.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://developer.github.com/v3/repos/comments/">Commit Comments API</a></li>
+			
+			<li><a href="https://developer.github.com/v3/issues/comments/">Issue Comments API</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://developer.github.com/v3/repos/comments/">Commit Comments API</a></li>
-        
-            <li><a href="https://developer.github.com/v3/issues/comments/">Issue Comments API</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateCommits"><span class="type-signature">&lt;inner> </span>populateCommits(projectId)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateCommits"><span class="type-signature">(inner) </span>populateCommits<span class="signature">(projectId)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Fetch all the commits of a given repository. Only commits modified after the
+    <div class="description">
+        Fetch all the commits of a given repository. Only commits modified after the
 last one in the database are fetched. Commits are ordered in descending order.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -881,6 +927,7 @@ last one in the database are fetched. Commits are ordered in descending order.
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -897,12 +944,17 @@ last one in the database are fetched. Commits are ordered in descending order.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -912,81 +964,82 @@ last one in the database are fetched. Commits are ordered in descending order.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://developer.github.com/v3/repos/commits/">Commits API</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://developer.github.com/v3/repos/commits/">Commits API</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateContributors"><span class="type-signature">&lt;inner> </span>populateContributors(projectId)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateContributors"><span class="type-signature">(inner) </span>populateContributors<span class="signature">(projectId)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Create the 'GitHubProfile' for the contributors of the project.
+    <div class="description">
+        Create the 'GitHubProfile' for the contributors of the project.
 If the developer is already on the database, add it as contributor.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1017,6 +1070,7 @@ If the developer is already on the database, add it as contributor.
 <span class="param-type">int</span>
 
 
+
             
             </td>
 
@@ -1031,12 +1085,17 @@ If the developer is already on the database, add it as contributor.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1046,74 +1105,75 @@ If the developer is already on the database, add it as contributor.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateCoOccurrences"><span class="type-signature">&lt;inner> </span>populateCoOccurrences(filter, site)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateCoOccurrences"><span class="type-signature">(inner) </span>populateCoOccurrences<span class="signature">(filter, site)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Populate all the CoOccurrences of tags on the database. CoOccurrences are
+    <div class="description">
+        Populate all the CoOccurrences of tags on the database. CoOccurrences are
 given related tags.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1146,6 +1206,7 @@ given related tags.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -1175,6 +1236,7 @@ given related tags.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -1195,12 +1257,17 @@ given related tags.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1210,84 +1277,85 @@ given related tags.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://api.stackexchange.com/docs/related-tags">Related Tags</a></li>
+			
+			<li>populateUserTags</li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://api.stackexchange.com/docs/related-tags">Related Tags</a></li>
-        
-            <li>populateUserTags</li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateEvents"><span class="type-signature">&lt;inner> </span>populateEvents(projectId)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateEvents"><span class="type-signature">(inner) </span>populateEvents<span class="signature">(projectId)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Fetch all Issue Events. Issue Events are the 'history' of that issue and show
+    <div class="description">
+        Fetch all Issue Events. Issue Events are the 'history' of that issue and show
 when it was referenced by a commit (or comment), when it was closed, opened,
 assigned (or deassigned) to someone.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1316,6 +1384,7 @@ assigned (or deassigned) to someone.
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -1332,12 +1401,17 @@ assigned (or deassigned) to someone.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1347,84 +1421,85 @@ assigned (or deassigned) to someone.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://developer.github.com/v3/issues/events/">Issue Events API</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://developer.github.com/v3/issues/events/">Issue Events API</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateIssues"><span class="type-signature">&lt;inner> </span>populateIssues(projectId)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateIssues"><span class="type-signature">(inner) </span>populateIssues<span class="signature">(projectId)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Populate Issues from a specific project on GitHub.
+    <div class="description">
+        Populate Issues from a specific project on GitHub.
 It creates 'tags' based on the text of the issue and on the StackOverflow tags.
 On GitHub, Pull Requests are issues and they are fetched in this same function,
 they are saved in the database with the 'isPR' attribute equals to true.
 To avoid throttle problems, only the new issues are fetched (once there is at least one in the database).
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1453,6 +1528,7 @@ To avoid throttle problems, only the new issues are fetched (once there is at le
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -1469,12 +1545,17 @@ To avoid throttle problems, only the new issues are fetched (once there is at le
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1484,80 +1565,81 @@ To avoid throttle problems, only the new issues are fetched (once there is at le
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://developer.github.com/v3/issues/">Issues API</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://developer.github.com/v3/issues/">Issues API</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateLanguages"><span class="type-signature">&lt;inner> </span>populateLanguages(projectId)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Fetch all the languages used in a GitHub project and update the database.
+    </div>
+    
 
     
 
-    <h4 class="name" id="~populateLanguages"><span class="type-signature">(inner) </span>populateLanguages<span class="signature">(projectId)</span><span class="type-signature"></span></h4>
-
     
 
-
-
-<div class="description">
-    Fetch all the languages used in a GitHub project and update the database.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+        <h5>Parameters:</h5>
+        
 
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1588,6 +1670,7 @@ To avoid throttle problems, only the new issues are fetched (once there is at le
 <span class="param-type">int</span>
 
 
+
             
             </td>
 
@@ -1602,12 +1685,17 @@ To avoid throttle problems, only the new issues are fetched (once there is at le
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1617,74 +1705,75 @@ To avoid throttle problems, only the new issues are fetched (once there is at le
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateQuestions"><span class="type-signature">&lt;inner> </span>populateQuestions(ids, projectId, filter, obj, site)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateQuestions"><span class="type-signature">(inner) </span>populateQuestions<span class="signature">(ids, projectId, filter, obj, site)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Populate answers from StackOverflow using the soPopulate function.
+    <div class="description">
+        Populate answers from StackOverflow using the soPopulate function.
 Answers can be populated based on users or not.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1717,6 +1806,7 @@ Answers can be populated based on users or not.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -1742,6 +1832,7 @@ Answers can be populated based on users or not.
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -1772,6 +1863,7 @@ Answers can be populated based on users or not.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -1799,6 +1891,7 @@ Answers can be populated based on users or not.
             
                 
 <span class="param-type">string</span>
+
 
 
             
@@ -1832,6 +1925,7 @@ Answers can be populated based on users or not.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -1852,12 +1946,17 @@ Answers can be populated based on users or not.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1867,85 +1966,86 @@ Answers can be populated based on users or not.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://api.stackexchange.com/docs/questions-by-ids%20"> Questions by ids</a>.</li>
+			
+			<li><a href="https://api.stackexchange.com/docs/questions-on-users%20"> Questions on users</a></li>
+			
+			<li>populateUserTags</li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://api.stackexchange.com/docs/questions-by-ids%20"> Questions by ids</a>.</li>
-        
-            <li><a href="https://api.stackexchange.com/docs/questions-on-users%20"> Questions on users</a></li>
-        
-            <li>populateUserTags</li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateStackOverflowUserData"><span class="type-signature">&lt;inner> </span>populateStackOverflowUserData(projectId)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateStackOverflowUserData"><span class="type-signature">(inner) </span>populateStackOverflowUserData<span class="signature">(projectId)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Populate questions, answers and tags related to users from a specific GitHub
+    <div class="description">
+        Populate questions, answers and tags related to users from a specific GitHub
 project.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1976,6 +2076,7 @@ project.
 <span class="param-type">int</span>
 
 
+
             
             </td>
 
@@ -1990,12 +2091,17 @@ project.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2005,84 +2111,85 @@ project.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li>populateAnswers</li>
+			
+			<li>populateQuestion</li>
+			
+			<li>populateUserTags</li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li>populateAnswers</li>
-        
-            <li>populateQuestion</li>
-        
-            <li>populateUserTags</li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateTags"><span class="type-signature">&lt;inner> </span>populateTags(filter, site)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Populate all the tags present in a specified StackExchange network.
+    </div>
+    
 
     
 
-    <h4 class="name" id="~populateTags"><span class="type-signature">(inner) </span>populateTags<span class="signature">(filter, site)</span><span class="type-signature"></span></h4>
-
     
 
-
-
-<div class="description">
-    Populate all the tags present in a specified StackExchange network.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+        <h5>Parameters:</h5>
+        
 
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2115,6 +2222,7 @@ project.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2144,6 +2252,7 @@ project.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2164,12 +2273,17 @@ project.
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2179,83 +2293,84 @@ project.
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://api.stackexchange.com/docs/tags">Tags</a></li>
+			
+			<li>populateUserTags</li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://api.stackexchange.com/docs/tags">Tags</a></li>
-        
-            <li>populateUserTags</li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~populateUserTags"><span class="type-signature">&lt;inner> </span>populateUserTags(ids, projectId, filter, site)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~populateUserTags"><span class="type-signature">(inner) </span>populateUserTags<span class="signature">(ids, projectId, filter, site)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Populate all the user tags from StackOverflow using the soPopulate function.
+    <div class="description">
+        Populate all the user tags from StackOverflow using the soPopulate function.
 User tags are provided by the endpoint @see <a href="https://api.stackexchange.com/docs/tags-on-users">Tags on users</a>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2288,6 +2403,7 @@ User tags are provided by the endpoint @see <a href="https://api.stackexchange.c
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2313,6 +2429,7 @@ User tags are provided by the endpoint @see <a href="https://api.stackexchange.c
             
                 
 <span class="param-type">int</span>
+
 
 
             
@@ -2341,6 +2458,7 @@ User tags are provided by the endpoint @see <a href="https://api.stackexchange.c
             
                 
 <span class="param-type">string</span>
+
 
 
             
@@ -2372,6 +2490,7 @@ User tags are provided by the endpoint @see <a href="https://api.stackexchange.c
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2392,12 +2511,17 @@ User tags are provided by the endpoint @see <a href="https://api.stackexchange.c
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2407,83 +2531,84 @@ User tags are provided by the endpoint @see <a href="https://api.stackexchange.c
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://api.stackexchange.com/docs/tags-on-users">Tags on users</a> for more information.</li>
+			
+			<li><a href="https://api.stackexchange.com/docs/tags-on-users#pagesize=100&order=desc&sort=popular&ids=696885&filter=!4-J-dtwSuoIA.NOpA&site=stackoverflow">Example Filter</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://api.stackexchange.com/docs/tags-on-users">Tags on users</a> for more information.</li>
-        
-            <li><a href="https://api.stackexchange.com/docs/tags-on-users#pagesize=100&order=desc&sort=popular&ids=696885&filter=!4-J-dtwSuoIA.NOpA&site=stackoverflow">Example Filter</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~remakeRequest"><span class="type-signature">&lt;inner> </span>remakeRequest(options, requestCallback)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~remakeRequest"><span class="type-signature">(inner) </span>remakeRequest<span class="signature">(options, requestCallback)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    When some errors occur, the populate functions will reattemp to make the request.
+    <div class="description">
+        When some errors occur, the populate functions will reattemp to make the request.
 If the error persists, this will terminate the requests to avoid throttle problems.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2514,6 +2639,7 @@ If the error persists, this will terminate the requests to avoid throttle proble
 <span class="param-type">object</span>
 
 
+
             
             </td>
 
@@ -2538,6 +2664,7 @@ If the error persists, this will terminate the requests to avoid throttle proble
 <span class="param-type">function</span>
 
 
+
             
             </td>
 
@@ -2553,12 +2680,17 @@ If the error persists, this will terminate the requests to avoid throttle proble
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2568,74 +2700,75 @@ If the error persists, this will terminate the requests to avoid throttle proble
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="~soPopulate"><span class="type-signature">&lt;inner> </span>soPopulate(option, specificUrl, callback)</h4>
+    
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="~soPopulate"><span class="type-signature">(inner) </span>soPopulate<span class="signature">(option, specificUrl, callback)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Basic flow for StackExchange requests. This handles the pagination and eventual errors,
+    <div class="description">
+        Basic flow for StackExchange requests. This handles the pagination and eventual errors,
 so every StackExchange request should be made though this function.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+    </div>
     
 
-<table class="params">
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2666,6 +2799,7 @@ so every StackExchange request should be made though this function.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2688,6 +2822,7 @@ check the request status later. It can be Tag, CoOccurrence, Question, etc.</td>
             
                 
 <span class="param-type">string</span>
+
 
 
             
@@ -2713,6 +2848,7 @@ check the request status later. It can be Tag, CoOccurrence, Question, etc.</td>
 <span class="param-type">function</span>
 
 
+
             
             </td>
 
@@ -2728,12 +2864,17 @@ check the request status later. It can be Tag, CoOccurrence, Question, etc.</td>
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2743,56 +2884,58 @@ check the request status later. It can be Tag, CoOccurrence, Question, etc.</td>
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/populator.js
+	</dd>
+	
 
-    
+	
 
-    
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="https://api.stackexchange.com/docs">StackExchange API overview</a></li>
+			
+			<li><a href="https://api.stackexchange.com/docs/compression">Compression</a></li>
+			</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://api.stackexchange.com/docs">StackExchange API overview</a></li>
-        
-            <li><a href="https://api.stackexchange.com/docs/compression">Compression</a></li>
-        </ul>
-    </dd>
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
+</dd>
 
-
-
-
-
-
-
-
-        
+        </dl>
     
 
     
@@ -2805,15 +2948,125 @@ check the request status later. It can be Tag, CoOccurrence, Question, etc.</td>
 
 
 
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
 </div>
 
-<br class="clear">
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> using the Minami theme.
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
 </footer>
 
-<script>prettyPrint();</script>
-<script src="scripts/linenumber.js"></script>
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
 </body>
 </html>
