@@ -1,6 +1,6 @@
 {
   "name": "Taskassignment.GitHub.io",
   "tagline": "",
-  "body": "### Welcome to TaskAssignment\r\n\r\nThis is the needed documentation to continue the development of this software. It's intended to help developers with previous information and assumptions made throughout the development course.\r\n\r\n#### Inline documentation\r\n\r\nYou can check the existing methods and what they do following [this link](/api)\r\n",
+  "body": "## Welcome to TaskAssignment\r\n\r\nThis is the needed documentation to continue the development of this software.\r\nIt's intended to help developers with previous information and assumptions made throughout the development course.\r\n\r\nOne important architectural decision is the profile division for Developers and Bugs.\r\nThey are similar and yet different.\r\nThese abstractions are needed to analyze data from different sources, like GitHub, Bugzilla, StackOverflow.\r\nMore details on each one bellow.\r\n\r\nCheck more on [bugs](/bugs), [developers](/developers) or on the [API docs](/api).",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
