@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Modules</title>
+	<title>Documentation Module: import</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -77,15 +77,10 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Modules</h1>
+	<h1 class="page-title">Module: import</h1>
 <section>
 
 <header>
-    
-        <h2>
-        
-        </h2>
-        
     
 </header>
 
@@ -93,6 +88,8 @@
 <article>
     <div class="container-overview">
     
+        
+            <div class="description">Checks the source and the type of import and handles according to that.</div>
         
 
         
@@ -126,6 +123,11 @@
 
 
 	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/import.js
+	</dd>
+	
 
 	
 
@@ -142,64 +144,344 @@
     
 
     
+        <h3 class="subsection-title">Requires</h3>
+
+        <ul>
+            <li>module:mongoose</li>
+        
+            <li>module:fs</li>
+        
+            <li>module:fast-csv</li>
+        </ul>
+    
 
     
-        <h3 class="subsection-title">Classes</h3>
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         <dl>
-            <dt><a href="Bug.html">Bug</a></dt>
-            <dd></dd>
+            
+<hr>
+<dt>
+    <h4 class="name" id="~readDevs"><span class="type-signature">&lt;inner> </span>readDevs()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Generates the callback to populate the common users.
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/import.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
         
-            <dt><a href="BugzillaBug.html">BugzillaBug</a></dt>
-            <dd></dd>
+            
+<hr>
+<dt>
+    <h4 class="name" id="~readFile"><span class="type-signature">&lt;inner> </span>readFile(modelName, transformCallback, headers, fileName)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Basic flow to read files. It's assumed that, whatever the file name, it's
+located on 'files/' (from the root of the project).
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
         
-            <dt><a href="BugzillaProfile.html">BugzillaProfile</a></dt>
-            <dd></dd>
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
         
-            <dt><a href="Comment.html">Comment</a></dt>
-            <dd></dd>
+        <th>Name</th>
         
-            <dt><a href="Commit.html">Commit</a></dt>
-            <dd></dd>
+
+        <th>Type</th>
+
         
-            <dt><a href="CoOccurrence.html">CoOccurrence</a></dt>
-            <dd></dd>
+
         
-            <dt><a href="Developer.html">Developer</a></dt>
-            <dd></dd>
+        <th>Default</th>
         
-            <dt><a href="Event.html">Event</a></dt>
-            <dd></dd>
-        
-            <dt><a href="GenerateFileLog.html">GenerateFileLog</a></dt>
-            <dd></dd>
-        
-            <dt><a href="GitHubIssue.html">GitHubIssue</a></dt>
-            <dd></dd>
-        
-            <dt><a href="GitHubProfile.html">GitHubProfile</a></dt>
-            <dd></dd>
-        
-            <dt><a href="Project.html">Project</a></dt>
-            <dd></dd>
-        
-            <dt><a href="StackOverflowProfile.html">StackOverflowProfile</a></dt>
-            <dd></dd>
-        
-            <dt><a href="StopWord.html">StopWord</a></dt>
-            <dd></dd>
-        
-            <dt><a href="Tag.html">Tag</a></dt>
-            <dd></dd>
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>modelName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">The Model name that will be import.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>transformCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">The function that will transform the data before
+    writing it to the database.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>headers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last">If true, it will consider the first line
+    of the file as headers. If an array is given, each entry will be a header.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fileName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">The name of file to be read. This should be a .tsv.
+    Default is modelName pluralized. E.g: modelName = Issue, fileName = Issues.tsv</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		server/controllers/import.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
         </dl>
-    
-
-    
-
-    
-
-    
-
     
 
     
