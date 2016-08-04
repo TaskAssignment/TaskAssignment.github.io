@@ -13,7 +13,7 @@ the current services supported are
 - Kernel
 - LibreOffice
 
-##Installation
+## Installation
 
 This script is written in python3 hence it needs
 to install the python dependencies by running
@@ -22,7 +22,7 @@ to install the python dependencies by running
 
 That text file is included in the same folder
 
-##How to use
+## How to use
 
 The commands to run this script are
 
@@ -38,7 +38,7 @@ Extract bugs from a specific project inside a service (Might take up to 1 hour):
 
  - `$ python3 generalextractor.py mozilla aus`
 
-##Examples
+## Examples
 
 
 - `$ python3 generalextractor.py showprojects bugzilla`
@@ -46,17 +46,18 @@ Extract bugs from a specific project inside a service (Might take up to 1 hour):
 - `$ python3 generalextractor.py mozilla toolkit`
 
 
-##Important
+## Important
 
 If the project of the servie you want to extract contains
 spaces, replace them using "%20" to run it in console
 
 
-## How add more services
+## How to add more services
 
 If you want to add more services
 
 1. Add the necesary URLS to the dictionaries related.
+
     - login
     - base
     - components
