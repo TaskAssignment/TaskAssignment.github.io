@@ -18,12 +18,6 @@ The current software installed in the box are
 
 ## Installation
 
-This script is written in python3 hence it needs
-to install the python dependencies by running
-
- - $ pip3 install -r requirements.txt
-
-That text file is included in the same folder
 
 ## How to use
 
@@ -52,14 +46,6 @@ Extract bugs from a specific project inside a service (Might take up to 1 hour):
 ## Important
 
 
-If the project of the servie you want to extract contains
-spaces, replace them using "%20" to run it in console.
-
-The description and documentation of each method
-is in the source code of the generator.
-
-You might want to generate the documentation website
-out of this by using pydocs.
 
 ## How to add more services
 
