@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# [Bug Extractor]
+# [General Extractor]
 
 The bug extractor is a Python3 script used to extract the information from the Bugzilla platform
 
