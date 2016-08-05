@@ -15,7 +15,7 @@ More details on each one bellow.
 Check more on [bugs](/bugs), [developers](/developers) or on the [API docs](/api).
 
 
-## For the specific documentation of
+## For the specific documentation of Bug Extractors
 
 - General extractor [Bugzilla](/generalextractor)
 - Deployment Tools  [Deployment](/deploymentTools)
