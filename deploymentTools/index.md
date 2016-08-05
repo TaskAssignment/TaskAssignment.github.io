@@ -16,34 +16,89 @@ The current software installed in the box are
 - python3
 - pip3
 
+This Vagrant box can be easily deployed to any
+Openstack or virtual machine hosting service by
+
 ## Installation
 
+Please install Vagrant first
+
+From this [link](https://www.vagrantup.com/downloads.html)
+
+and make sure that you can run vagrant in your system without problems
 
 ## How to use
 
 The commands to run this script are
 
-Show services available:
+Set the VagrantFile:
 
- - `$ python3 generalextractor.py showservices`
+ - `$ vagrant init mybox.box`
 
-Show projects from a service:
+Starts the virtual machine:
 
- - `$ python3 generalextractor.py showprojects mozilla`
+**This make take a lot of time the first time, make sure
+you have an Internet connection**
 
-Extract bugs from a specific project inside a service (Might take up to 1 hour):
+ - `$ vagrant up`
 
- - `$ python3 generalextractor.py mozilla aus`
+Login to the virtual machine:
 
-## Examples
-
-
-- `$ python3 generalextractor.py showprojects bugzilla`
-- `$ python3 generalextractor.py showservices`
-- `$ python3 generalextractor.py mozilla toolkit`
+ - `$ vagrant ssh`
 
 
-## Important
+## Installed software
+
+
+- MongoDB v3.2.8
+
+- Git v2.7.4
+
+- Node.js v6.3.1
+
+- NPM v3.10.3
+
+- Python v3.5.2
+
+- PIP3 v8.1.1
+
+## Command use for the configuration of the Vagrant Box
+
+
+Install important general dependencies
+
+- `$ sudo apt-get update
+- `$ sudo apt-get upgrade
+- `$ sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+
+Install git
+
+- `$ sudo apt-get install git
+
+Install mongodb
+
+- `$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+- `$ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+- `$ sudo apt-get install -y mongodb-org
+
+Install node.js and required libraries
+
+- `$ sudo apt install curl
+- `$ apt-get install make g++ libssl-dev git
+- `$ sudo apt-get update
+
+`$ cd /tmp
+$ wget https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz
+$ tar -xvf node-v6.3.1.tar.gz
+$ cd node-v6.3.1
+$ ./configure
+$ make -j2
+$ make install
+`
+
+Install pip3
+
+`$ sudo apt-get -y install python3-pip`
 
 
 
