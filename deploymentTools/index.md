@@ -94,17 +94,21 @@ Install mongodb
 
 Install node.js and required libraries
 
+The libraries
+
 - `$ sudo apt install curl`
 - `$ apt-get install make g++ libssl-dev git`
 - `$ sudo apt-get update`
 
-`$ cd /tmp`
-`$ wget https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz`
-`$ tar -xvf node-v6.3.1.tar.gz`
-`$ cd node-v6.3.1`
-`$ ./configure`
-`$ make -j2`
-`$ make install`
+The package
+
+- `$ cd /tmp`
+- `$ wget https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz`
+- `$ tar -xvf node-v6.3.1.tar.gz`
+- `$ cd node-v6.3.1`
+- `$ ./configure`
+- `$ make -j2`
+- `$ make install`
 
 
 Install pip3
