@@ -30,16 +30,26 @@ and make sure that you can run vagrant in your system without problems
 
 ## How to use
 
-The commands to run this script are
+Download the Vagrant box at Google Drive
 
-Set the VagrantFile:
+[https://drive.google.com/open?id=0B1ymt5yabalHdnlkci1xNWRzb3M](https://drive.google.com/open?id=0B1ymt5yabalHdnlkci1xNWRzb3M)
 
- - `$ vagrant init mybox.box`
+The commands to run the environment are
 
-Starts the virtual machine:
+ - `$ vagrant box add software_expertise software_expertise.box`
+ - `$ vagrant init software_expertise`
+ - `$ vagrant up`
+ - `$ vagrant ssh`
 
-**This make take a lot of time the first time, make sure
-you have an Internet connection**
+ This will start the VM (virtual machine)
+ and you'll be able to use it
+
+## Important
+
+These commands are used every day to start and
+log in to the VM
+
+**This command might a while the first time**
 
  - `$ vagrant up`
 
@@ -103,7 +113,7 @@ Install pip3
 
 The following is to make sure the python3 dependencies will run
 
-`sudo apt-get install python-dev libxml2-dev libxslt1-dev zlib1g-dev`
+`$ sudo apt-get install python-dev libxml2-dev libxslt1-dev zlib1g-dev`
 
 
 ## Author & Support
