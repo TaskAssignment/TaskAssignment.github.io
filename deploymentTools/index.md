@@ -76,6 +76,10 @@ Login to the virtual machine:
 ## Command use for the configuration of the Vagrant Box
 
 
+This Vagrant box was built using Ubuntu 16.04
+on top of [https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04)
+
+
 Install important general dependencies
 
 - `$ sudo apt-get update`
