@@ -5,7 +5,8 @@ layout: default
 # [deploymentTools]
 
 To deploy the project I have created a Vagrant box to ensure portability
-and ease of development
+and ease of development, this makes easy to install the environment on
+every computer regarding the OS. It uses Vagrant
 
 The current software installed in the box are
 
@@ -67,68 +68,43 @@ Login to the virtual machine:
 
 Install important general dependencies
 
-- `$ sudo apt-get update
-- `$ sudo apt-get upgrade
-- `$ sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+- `$ sudo apt-get update`
+- `$ sudo apt-get upgrade`
+- `$ sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip`
 
 Install git
 
-- `$ sudo apt-get install git
+- `$ sudo apt-get install git`
 
 Install mongodb
 
-- `$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
-- `$ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
-- `$ sudo apt-get install -y mongodb-org
+- `$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927`
+- `$ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list`
+- `$ sudo apt-get install -y mongodb-org`
 
 Install node.js and required libraries
 
-- `$ sudo apt install curl
-- `$ apt-get install make g++ libssl-dev git
-- `$ sudo apt-get update
+- `$ sudo apt install curl`
+- `$ apt-get install make g++ libssl-dev git`
+- `$ sudo apt-get update`
 
-`$ cd /tmp
-$ wget https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz
-$ tar -xvf node-v6.3.1.tar.gz
-$ cd node-v6.3.1
-$ ./configure
-$ make -j2
-$ make install
-`
+`$ cd /tmp`
+`$ wget https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz`
+`$ tar -xvf node-v6.3.1.tar.gz`
+`$ cd node-v6.3.1`
+`$ ./configure`
+`$ make -j2`
+`$ make install`
+
 
 Install pip3
 
 `$ sudo apt-get -y install python3-pip`
 
+The following is to make sure the python3 dependencies will run
 
+`sudo apt-get install python-dev libxml2-dev libxslt1-dev zlib1g-dev`
 
-## How to add more services
-
-If you want to add more services
-
-1. Add the necesary URLS to the dictionaries related.
-
-    - login
-    - base
-    - components
-    - bugs
-    - history
-    - prefix
-
-2. Make sure the new platform has a user registered as the rest. You can register
-  new users for all the platforms but all of them must have the same one.
-
-3. Add the XPath to the data (ids, components and projects). For most
-  of them are handled but in case is diferent just add "|" and the path.
-
-4. Run the script with the new platform, make sure the name of the new
-  service doesn't conflict with the rest.
-
-Remember that depending on the provider the field names and other things might change
-
-## Documentation
-
-You can check the source code for the detailed description of each method
 
 ## Author & Support
 
