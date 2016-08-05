@@ -40,7 +40,7 @@
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li>
+					<li><a href="Bug.html">Bug</a></li><li><a href="BugzillaBug.html">BugzillaBug</a></li><li><a href="BugzillaComment.html">BugzillaComment</a></li><li><a href="BugzillaHistory.html">BugzillaHistory</a></li><li><a href="BugzillaProfile.html">BugzillaProfile</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Commit.html">Commit</a></li><li><a href="CoOccurrence.html">CoOccurrence</a></li><li><a href="Developer.html">Developer</a></li><li><a href="Event.html">Event</a></li><li><a href="GenerateFileLog.html">GenerateFileLog</a></li><li><a href="GitHubIssue.html">GitHubIssue</a></li><li><a href="GitHubProfile.html">GitHubProfile</a></li><li><a href="Project.html">Project</a></li><li><a href="StackOverflowProfile.html">StackOverflowProfile</a></li><li><a href="StopWord.html">StopWord</a></li><li><a href="Tag.html">Tag</a></li>
 				</ul>
 			</li>
 			
@@ -215,7 +215,7 @@ used
             
 <hr>
 <dt class="name" id="~_id">
-    <h4><span class="type-signature">&lt;inner> </span>_id<span class="type-signature"> :Number</span></h4>
+    <h4><span class="type-signature">&lt;inner> </span>_id<span class="type-signature"> :String</span></h4>
 
     
 </dt>
@@ -223,7 +223,9 @@ used
     
     <div class="description">
         The id on the source. Since this is a Bugzilla bug, this number should be
-unique on their database.
+unique on their database. However, since Bugzilla is an open source sofware,
+we use the service to assure the uniqueness of this id. E.g: If this bug comes
+from mozilla, it will have _id = 'MZ' + id.
     </div>
     
 
@@ -232,7 +234,7 @@ unique on their database.
         <ul>
             <li>
                 
-<span class="param-type">Number</span>
+<span class="param-type">String</span>
 
 
 
@@ -292,7 +294,7 @@ unique on their database.
             
 <hr>
 <dt class="name" id="~assignee">
-    <h4><span class="type-signature">&lt;inner> </span>assignee<span class="type-signature"> :Number</span></h4>
+    <h4><span class="type-signature">&lt;inner> </span>assignee<span class="type-signature"> :String</span></h4>
 
     
 </dt>
@@ -308,7 +310,7 @@ unique on their database.
         <ul>
             <li>
                 
-<span class="param-type">Number</span>
+<span class="param-type">String</span>
 
 
 
@@ -459,7 +461,7 @@ Key on a relational database)
             
 <hr>
 <dt class="name" id="~ccUsers">
-    <h4><span class="type-signature">&lt;inner> </span>ccUsers<span class="type-signature"> :Array.&lt;Number></span></h4>
+    <h4><span class="type-signature">&lt;inner> </span>ccUsers<span class="type-signature"> :Array.&lt;String></span></h4>
 
     
 </dt>
@@ -475,7 +477,7 @@ Key on a relational database)
         <ul>
             <li>
                 
-<span class="param-type">Array.&lt;Number></span>
+<span class="param-type">Array.&lt;String></span>
 
 
 
