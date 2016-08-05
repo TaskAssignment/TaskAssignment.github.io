@@ -24,7 +24,7 @@ Openstack or virtual machine hosting service by
 
 Please install Vagrant first
 
-From this [link](https://www.vagrantup.com/downloads.html)
+From this [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
 
 and make sure that you can run vagrant in your system without problems
 
@@ -34,7 +34,7 @@ Download the Vagrant box at Google Drive
 
 [https://drive.google.com/open?id=0B1ymt5yabalHdnlkci1xNWRzb3M](https://drive.google.com/open?id=0B1ymt5yabalHdnlkci1xNWRzb3M)
 
-The commands to run the environment are
+Run the environment with
 
  - `$ vagrant box add software_expertise software_expertise.box`
  - `$ vagrant init software_expertise`
@@ -49,7 +49,7 @@ The commands to run the environment are
 These commands are used every day to start and
 log in to the VM
 
-**This command might a while the first time**
+**This command might take a while the first time**
 
  - `$ vagrant up`
 
