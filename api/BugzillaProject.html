@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Class: GitHubIssue</title>
+	<title>Documentation Class: BugzillaProject</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -77,13 +77,13 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: GitHubIssue</h1>
+	<h1 class="page-title">Class: BugzillaProject</h1>
 <section>
 
 <header>
     
         <h2>
-        GitHubIssue
+        BugzillaProject
         </h2>
         
     
@@ -96,7 +96,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="GitHubIssue"><span class="type-signature"></span>new GitHubIssue()</h4>
+    <h4 class="name" id="BugzillaProject"><span class="type-signature"></span>new BugzillaProject()</h4>
     
     
 </dt>
@@ -104,8 +104,7 @@
 
     
     <div class="description">
-        This represents a GitHub Issue. It references to a basic bug and has the additional
-information pertinent to GitHub (like if it's a Pull Request or the Assignees)
+        This represents a GitHub repository.
     </div>
     
 
@@ -149,19 +148,12 @@ information pertinent to GitHub (like if it's a Pull Request or the Assignees)
 	
 	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
 	<dd class="tag-source">
-		server/models/gitHubIssue.js
+		server/models/bugzillaproject.js
 	</dd>
 	
 
 	
 
-	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="Bug.html">Bug</a></li>
-			</ul>
-	</dd>
 	
 
 	
@@ -214,174 +206,16 @@ information pertinent to GitHub (like if it's a Pull Request or the Assignees)
             
 <hr>
 <dt class="name" id="~_id">
-    <h4><span class="type-signature">&lt;inner> </span>_id<span class="type-signature"> :Number</span></h4>
+    <h4><span class="type-signature">&lt;inner> </span>_id<span class="type-signature"> :String</span></h4>
 
     
 </dt>
 <dd>
     
     <div class="description">
-        GitHub id for the issue.
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Number</span>
-
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		server/models/gitHubIssue.js
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt class="name" id="~assignees">
-    <h4><span class="type-signature">&lt;inner> </span>assignees<span class="type-signature"> :Array.&lt;String></span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        The assignees of this issue (zero or more)
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Array.&lt;String></span>
-
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		server/models/gitHubIssue.js
-	</dd>
-	
-
-	
-
-	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="GitHubProfile.html">GitHubProfile</a></li>
-			</ul>
-	</dd>
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt class="name" id="~bug">
-    <h4><span class="type-signature">&lt;inner> </span>bug<span class="type-signature"> :String</span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        This is the reference to the generic Bug on the database. (Like a Foreign
-Key on a relational database)
+        The name of the repository will be the Id. Name is given by service + project.
+E.g.: service: mozilla, project: firefox. _id = 'mozilla/firefox'. This
+is to make it simillar to github.
     </div>
     
 
@@ -431,263 +265,12 @@ Key on a relational database)
 	
 	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
 	<dd class="tag-source">
-		server/models/gitHubIssue.js
+		server/models/bugzillaproject.js
 	</dd>
 	
 
 	
 
-	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="Bug.html">Bug</a></li>
-			</ul>
-	</dd>
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt class="name" id="~isPR">
-    <h4><span class="type-signature">&lt;inner> </span>isPR<span class="type-signature"> :Boolean</span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Boolean representing if this issue is a Pull Request (PR) or not. Every PR
-is an issue on GitHub.
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Boolean</span>
-
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
-	<dd class="tag-default">
-		<ul class="dummy">
-			<li>false</li>
-		</ul>
-	</dd>
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		server/models/gitHubIssue.js
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt class="name" id="~number">
-    <h4><span class="type-signature">&lt;inner> </span>number<span class="type-signature"> :Number</span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        The issue number. This number is unique inside a project, but NOT in
-all GitHub.
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Number</span>
-
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		server/models/gitHubIssue.js
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt class="name" id="~project">
-    <h4><span class="type-signature">&lt;inner> </span>project<span class="type-signature"> :Number</span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        The project where this issue comes from.
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Number</span>
-
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		server/models/gitHubIssue.js
-	</dd>
-	
-
-	
-
-	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="Project.html">Project</a></li>
-			</ul>
-	</dd>
 	
 
 	
