@@ -2,21 +2,18 @@
 layout: default
 ---
 
-## Welcome to TaskAssignment
+# How to use TaskAssignment
 
-This is the needed documentation to continue the development of this software.
-It's intended to help developers with previous information and assumptions made throughout the development course.
+This is the user manual fot the task assignment system.
+If you are looking for the developer's documentation, you should check [this place](https://github.com/TaskAssignment/software-expertise/wiki) or the [API docs](https://taskassignment.github.io/api/).
 
-One important architectural decision is the profile division for Developers and Bugs.
-They are similar and yet different.
-These abstractions are needed to analyze data from different sources, like GitHub, Bugzilla, StackOverflow.
-More details on each one bellow.
+## Manage Data
 
-Check more on [bugs](/bugs), [developers](/developers) or on the [API docs](/api).
+The first thing to do when using the system is to populate the database. If you are not the first user, it's possible it is already populated. You can check that by exporting the data.
+
+### Import Data
+
+### Export Data
 
 
-## For the specific documentation of Bug Extractors
-
-- General extractor [Bugzilla](/generalextractor)
-- Deployment Tools  [Deployment](/deploymentTools)
-- General tools [Tools](http://bugextractordocs.readthedocs.io/en/latest/)
+## Visualize similarity
