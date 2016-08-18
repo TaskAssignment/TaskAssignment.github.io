@@ -32,3 +32,5 @@ After you have the database populated, you can check the similarity between bugs
 To do that, you can look for the name of the project you want to analyze. The search bar will appear once you hover the mouse over the magnifying glass icon.
 
 When you press the magnifying glass, the projects with the searched name will appear, separated by their source, GitHub and Bugzilla, as of right now. Select the desired project and the bugs will appear on the left side of your screen.
+
+![import](/images/search-project.gif "Search project")
